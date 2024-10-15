@@ -1,3 +1,5 @@
+import os
+
 no = ["11", "12", "13", "21", "22", "23", "31", "32", "33"]
 print("\nWELCOME TO X/O GAME\n")
 
@@ -67,6 +69,7 @@ while True:
     if n%2 == 0:
         choice = input("Enter the coordinates you want to enter for X:")
         n += 1
+        os.system('cls')
         if choice == "11":
             ls_f[2] = "X"
             prt()
@@ -100,6 +103,7 @@ while True:
     elif n%2 != 0:
         choice = input("Enter the coordinates you want to enter for O:")
         n += 1
+        os.system('cls')
         if choice == "11":
             ls_f[2] = "O"
             prt()
